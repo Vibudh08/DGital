@@ -23,7 +23,7 @@ export default function NavBar() {
             </ul>
             <button className='btn'>Get Started</button>
             <div className='trigger'>
-                <img src={Ham} alt="" />
+                <img src={Ham} alt="image" />
             </div>
         </div>
         <img id="image2" src={bloob}/>
