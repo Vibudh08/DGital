@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.containerBox{
+    align-items: center;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 33%;
+}
+
+.Box{
+    padding: 60px 40px;
+    background-color: #f0f4ff;
+    border-radius: 12px;
+    box-shadow: rgb(101 84 210) 0px 25px 20px -20px;
+    height: 100%;
+}
+
+.imgBox{
+    padding: 15px;
+}
+
+@media (max-width:800px) {
+    .containerBox{
+        width: 50%;
+    }
+}
+@media (max-width:550px) {
+    .containerBox{
+        width: 100%;
+    }
+}

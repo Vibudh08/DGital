@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.containerbanner{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 198px 16px 100px;
+    align-items: center;
+    min-height: 100vh;
+}
+.imgcolor{
+    background-color: rgb(101 84 210);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.section1{
+    width: 50%;
+    padding-right: 15%;
+}
+
+.bannerimage {
+    width: 50%;
+}
+.image3{
+    max-width: 100%;
+}
+
+.image4{
+    width: 100%;
+    margin-bottom: -6px;
+}
+
+.head{
+    font-size: 40px;
+}
+
+.pbanner{
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.btn2{
+    padding: 20px 45px;
+    border-radius: 34px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16x;
+    background-color: orange;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn22{
+    padding: 20px 45px;
+    border-radius: 34px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16x;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn2:active {
+    background-color:orange;
+  }
+
+.blobcenter{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 86px);
+    left: calc(50% - 200px);
+}
+
+.blobbl{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+.blobbr{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+}
+
+@media(max-width: 1070px) {
+    .section1 {
+        padding-right: 0%;
+    }
+    .buttonnavbar{
+        text-align: center;
+    }
+    .blobcenter{
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .containerbanner {
+        flex-wrap: wrap;
+        padding-top: 190px;
+    }
+    
+    .section1 {
+        width: 100%;
+        padding-bottom: 74px;
+    }
+    
+    .bannerimage {
+        width: 100%;
+    }
+    
+    .image3 {
+        max-width: 535px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media(max-width: 450px) {
+.btn22, .btn2 {
+    padding: 15px 27px;
+    margin-right: 0;
+}
+
+.btn2 {
+    margin-right: 15px;
+}
+}

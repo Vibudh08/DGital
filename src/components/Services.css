@@ -1,0 +1,25 @@
+.services{
+    margin: auto;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+}
+.containerServices{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.h3Services{
+    color: orange;
+}
+
+.h1Services{
+    font-size: 40px;
+    margin: 10px;
+}
+
+.boxServices{
+    display: flex;
+    flex-wrap: wrap;
+}
+

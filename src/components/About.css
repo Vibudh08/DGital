@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.containerAbout{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.section2{
+    width: 55%;
+    padding-bottom: 15%;
+    padding-right: 15%;
+
+}
+.image5 {
+    max-width: 100%;
+}
+.aboutimg {
+    width: 45%;
+}
+
+.aboutwrapper {
+    padding: 130px 0px 0px;
+}
+.h3About{
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.head2{
+    font-size: 35px;
+}
+
+.pabout{
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.btn3{
+    padding: 20px 45px;
+    border-radius: 34px;
+    margin-right: 20px;
+    margin-top: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16x;
+    background-color: rgb(101 84 210);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.spanright{
+    float: right;
+}
+.line1{
+    height: 4px;
+    width: 85%;
+    background-color: rgb(101 84 210);
+    margin-top: 10px;
+}
+
+.line2{
+    height: 5px;
+    width: 90%;
+    background-color: orange;
+    margin-top: 10px;
+}
+
+.line3{
+    height: 4px;
+    width: 95%;
+    background-color: black;
+    margin-top: 10px;
+}
+
+@media(max-width: 980px) {
+    .section2 {
+        padding-right: 0%;
+    }
+}
+@media (max-width:730px) {
+    .containerAbout{
+        flex-wrap: wrap;
+
+    }
+    .section2{
+        width: 100%;
+    }
+    .aboutimg{
+        width: 100%;
+    }
+    .aboutwrapper{
+        margin-bottom: 80px;
+    }
+}
