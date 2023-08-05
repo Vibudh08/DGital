@@ -14,7 +14,7 @@ export default function () {
     <div className='containerGallery'>
         <section className='gallery'>
             <h3 className='h3Gallery'>-- - OUR GALLERY - --</h3>
-            <h1 className='h1Gallery'>Recently Uploaded Images</h1>
+            <h1 className='h1Gallery'>Recently Created Projects</h1>
         </section>
     </div>
         <section className='galleryboxServices galleryItem'>

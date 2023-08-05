@@ -8,14 +8,14 @@
     background-color: rgb(101 84 210);
     color: white;
     border-bottom: 1px solid rgb(255 255 255 / 19%);
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 2;
 }
 .containerNav{
     display: flex;
-    /* padding: 10px; */
+    padding: 8px;
     align-items: center;
 }
 
@@ -83,14 +83,17 @@ img#image2 {
 @media (max-width:767px) {
     .containerNav{
         flex-direction: column;
-        position: relative;
+        /* position: relative; */
         align-items: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 0;
     }
+    
     .trigger{
         position: absolute;
         right: 0;
-        margin-top: 13px;
-        margin-right: 13px;
+        margin-top: 15px;
+        margin-right: 15px;
     }
     .navul{
         display: none;
@@ -100,28 +103,30 @@ img#image2 {
         flex-direction: column;
         text-align: center;
         height: 550px;
-        margin: 30px;
+        margin-top: 50px;
+        z-index: 1;
     }
     .navli{
-        margin: 10px;
+        margin: 18px;
         font-size: 25px;
     }
     .logoName{
         position: absolute;
         left: 0;
-        margin-top: 8px;
-        margin-left: 13px;
+        margin-top: 2px;
+        margin-left: -13px;
+        font-size: 20px;
     }
-    .navbar{
-        position: relative;
-    }
+    
     .btn{
         display: none;
     }
-    .logoName{
-        padding-left: 0;
-    }
     .containerNav {
         justify-content: space-between;
+    }
+    .navbar{
+        /* height: 500px; */
+        transition: all 0.7s ease-out;
+
     }
 }
