@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
+import {Link } from "react-router-dom";
 import './NavBar.css'
 import blob from '../Images/blob-top-left.png'
 import bloob from '../Images/blob-top-right.png'
 import Ham from '../Images/Icons/hamburger.png'
 import X from '../Images/Icons/close.png'
-import MenuIcon from '@mui/icons-material/Menu';
-import { IoMdMenu } from "react-icons/io";;
+
 
 
 export default function NavBar() {
@@ -20,12 +20,12 @@ export default function NavBar() {
             <ul className={isMobile ? 'navul-mobile' : 'navul'}
                 onClick={()=>{setiSMobile(false)}}
             >
-                <li className='navli'><a href="#">Home</a></li>
-                <li className='navli'><a href="#">About</a></li>
-                <li className='navli'><a href="#">Service</a></li>
-                <li className='navli'><a href="#">Project</a></li>
-                <li className='navli'><a href="#">Pages +</a></li>
-                <li className='navli'><a href="#">Contact</a></li>
+                <li className='navli'><a href="/">Home</a></li>
+                <li className='navli'><a href="/about">About</a></li>
+                <li className='navli'><a href="/service">Service</a></li>
+                <li className='navli'><a href="project">Project</a></li>
+                <li className='navli'><a href="/pages">Pages +</a></li>
+                <li className='navli'><a href="/contact">Contact</a></li>
             </ul>
             <img id="image2" src={bloob}/>
             <button className='btn'>Get Started</button>

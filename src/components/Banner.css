@@ -6,9 +6,10 @@
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 70px 16px 100px;
+    padding: 130px 16px 100px;
     align-items: center;
     min-height: 100vh;
+    /* margin-top: ; */
 }
 .imgcolor{
     background-color: rgb(101 84 210);
@@ -77,7 +78,7 @@
     margin: 0;
     position: absolute;
     z-index: 1;
-    top: calc(50% - 100px);
+    top: calc(50% - 140px);
     left: calc(50% - 200px);
 }
 
@@ -146,6 +147,6 @@
 
 @media (max-width:767px){
     .head{
-        font-size: 38px;
+        font-size: 35px;
     }
 }
