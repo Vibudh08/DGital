@@ -1,10 +1,12 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import about from '../Images/about.png'
 import './About.css'
 
 export default function About() {
   return (
     <>
+    <Element id='about' name='about'>
       <div className='aboutwrapper'>
         <div className='containerAbout'>
             <div className='section2'>
@@ -26,6 +28,7 @@ export default function About() {
             </div>
         </div>
       </div>
+      </Element>
     </>
   )
 }

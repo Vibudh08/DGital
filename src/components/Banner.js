@@ -1,6 +1,7 @@
 import React from 'react'
 import hero from '../Images/hero.png'
 import './Banner.css'
+import { Element } from 'react-scroll'
 import bgbottom from '../Images/bg-bottom.png'
 import blobcenter from '../Images/blob-center.png'
 import blobbottomleft from '../Images/blob-bottom-left.png'
@@ -9,6 +10,7 @@ import blobbottomright from '../Images/blob-bottom-right.png'
 export default function () {
   return (
     <>
+    <Element id='home' name='home'>
     <div className='imgcolor' >
       <div className='containerbanner'>
         <div className='section1'>
@@ -28,6 +30,7 @@ export default function () {
       <img className="blobbr"src={blobbottomright} alt="" />
       <img  class="image4" src={bgbottom} />
     </div>
+    </Element>
     </>
   )
 }

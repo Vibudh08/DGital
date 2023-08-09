@@ -1,8 +1,11 @@
 import React from 'react'
 import './Form.css'
+import { Element } from 'react-scroll'
 
 export default function () {
   return (
+    <>
+    <Element id='contact' name='contact'>
     <div containerForm>
         <h1 className='h1form'>Get Started</h1>
         <p className='pform'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam molestiae quis?</p>
@@ -24,5 +27,7 @@ export default function () {
             </div>
         </div>
     </div>
+    </Element>
+    </>
   )
 }

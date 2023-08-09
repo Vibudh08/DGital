@@ -1,4 +1,5 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import './Gallery.css'
 import Box from './Box'
 import portfolio1 from '../Images/portfolio-1.jpg'
@@ -11,6 +12,7 @@ import portfolio6 from '../Images/portfolio-6.jpg'
 export default function () {
   return (
     <>
+    <Element id='project' name='project'>
     <div className='containerGallery'>
         <section className='gallery'>
             <h3 className='h3Gallery'>-- - OUR GALLERY - --</h3>
@@ -25,6 +27,7 @@ export default function () {
             <Box image={portfolio5}/>
             <Box image={portfolio6}/>
         </section>
+        </Element>
     </>
   )
 }
