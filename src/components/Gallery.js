@@ -1,13 +1,13 @@
 import React from 'react'
 import { Element } from 'react-scroll'
 import './Gallery.css'
-import Box from './Box'
 import portfolio1 from '../Images/portfolio-1.jpg'
 import portfolio2 from '../Images/portfolio-2.jpg'
 import portfolio3 from '../Images/portfolio-3.jpg'
 import portfolio4 from '../Images/portfolio-4.jpg'
 import portfolio5 from '../Images/portfolio-5.jpg'
 import portfolio6 from '../Images/portfolio-6.jpg'
+import GalleryBox from './GalleryBox'
 
 export default function () {
   return (
@@ -20,12 +20,12 @@ export default function () {
         </section>
     </div>
         <section className='galleryboxServices galleryItem'>
-            <Box image={portfolio1}/>
-            <Box image={portfolio2}/>
-            <Box image={portfolio3}/>
-            <Box image={portfolio4}/>
-            <Box image={portfolio5}/>
-            <Box image={portfolio6}/>
+            <GalleryBox image={portfolio1}/>
+            <GalleryBox image={portfolio2}/>
+            <GalleryBox image={portfolio3}/>
+            <GalleryBox image={portfolio4}/>
+            <GalleryBox image={portfolio5}/>
+            <GalleryBox image={portfolio6}/>
         </section>
         </Element>
     </>

@@ -1,12 +1,9 @@
-import Banner from './components/Banner';
 import NavBar from './components/NavBar';
-import About from './components/About';
-import Services from './components/Services';
-import Gallery from './components/Gallery'
 import Footer from './components/Footer';
-import Form from './components/Form';
 
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { BrowserRouter, Routes,Route} from 'react-router-dom';
+import Home from './Pages/Home';
+import ServicesDetail from './Pages/ServicesDetail';
 // import './App.css';
 
 function App() {
@@ -14,11 +11,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar/>
-        <Banner/>
-        <About/>
-        <Services/>
-        <Gallery/>
-        <Form/>
+        <Routes>
+          <Route exact path="/" element={<Home/>}> </Route>
+          <Route exact path="/serviceDetail" element={<ServicesDetail/>}> </Route>
+        </Routes>
         <Footer/>
       </BrowserRouter>
     </div>
