@@ -24,59 +24,58 @@ export default function NavBar() {
                 <h1>DGital</h1>
             </div>
             {router.pathname === "/" ? (
-                <ul className={isMobile ? 'navul navul-mobile' : 'navul'}
-                >
-                <li className='navli'>
-                    <ScrollLink to="home" 
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={1000}
-                    onClick={()=>{setiSMobile(false)}}>
-                        Home
-                    </ScrollLink>
-                </li>
-                <li className='navli'>
-                    <ScrollLink to="about" 
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={1000}
-                    onClick={()=>{setiSMobile(false)}}>
-                        About
-                    </ScrollLink>
-                </li>
-                <li className='navli'>
-                    <ScrollLink to="services" 
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={1000}
-                    onClick={()=>{setiSMobile(false)}}>
-                        Services
-                    </ScrollLink>
-                </li>
-                <li className='navli'>
-                    <ScrollLink to="project" 
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={1000}
-                    onClick={()=>{setiSMobile(false)}}>
-                        Project
-                    </ScrollLink>
-                </li>
-                <li className='navli'>
-                    <ScrollLink to="contact" 
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={1000}
-                    onClick={()=>{setiSMobile(false)}}>
-                        Contact
-                    </ScrollLink>
-                </li>
-            </ul>
+                <ul className={isMobile ? 'navul navul-mobile' : 'navul'}>
+                    <li className='navli'>
+                        <ScrollLink to="home" 
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={1000}
+                        onClick={()=>{setiSMobile(false)}}>
+                            Home
+                        </ScrollLink>
+                    </li>
+                    <li className='navli'>
+                        <ScrollLink to="about" 
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={1000}
+                        onClick={()=>{setiSMobile(false)}}>
+                            About
+                        </ScrollLink>
+                    </li>
+                    <li className='navli'>
+                        <ScrollLink to="services" 
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={1000}
+                        onClick={()=>{setiSMobile(false)}}>
+                            Services
+                        </ScrollLink>
+                    </li>
+                    <li className='navli'>
+                        <ScrollLink to="project" 
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={1000}
+                        onClick={()=>{setiSMobile(false)}}>
+                            Project
+                        </ScrollLink>
+                    </li>
+                    <li className='navli'>
+                        <ScrollLink to="contact" 
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={1000}
+                        onClick={()=>{setiSMobile(false)}}>
+                            Contact
+                        </ScrollLink>
+                    </li>
+                </ul>
             ): (
             <ul className={isMobile ? 'navul navul-mobile' : 'navul'}
                 >
@@ -108,10 +107,7 @@ export default function NavBar() {
             </ul>
             )}
             <img id="image2" src={bloob}/>
-            {/* <button className='btn'>Get Started</button> */}
-            <button className='trigger'
-                onClick={()=>setiSMobile(!isMobile)}
-            >
+            <button className='trigger' onClick={()=>setiSMobile(!isMobile)}>
                 {isMobile ? <img src={X} alt="" /> : <img src={Ham}/>}
             </button>
         </div>

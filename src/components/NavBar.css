@@ -131,8 +131,7 @@ img#image2 {
     .navul.navul-mobile {
         opacity: 1;
         visibility: visible;
-        pointer-events: all;
-        
+        pointer-events: all;  
     }
     
     .navul .navli {
