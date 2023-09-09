@@ -11,6 +11,7 @@
 
 .sericeCont{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    margin: -51px 100px 100px ; 
+    margin: 130px 100px 100px ; 
     padding: 30px;
+    border-radius: 16px;
 }
