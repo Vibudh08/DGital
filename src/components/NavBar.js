@@ -11,7 +11,7 @@ import X from '../Images/Icons/close.png'
 
 
 export default function NavBar() {
-    const [isMobile,setiSMobile] =useState(true)
+    const [isMobile,setiSMobile] =useState(false)
 
     const router = useLocation();
     let rout = router.pathname.slice(0,5)
