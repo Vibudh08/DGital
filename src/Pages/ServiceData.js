@@ -10,19 +10,27 @@ export default function ServiceData() {
     const [details,setDetails]= useState("")
 
     useEffect(()=>{
-        axios.get("https://app.ecwid.com/api/v3/82720670/categories/"+queryParams.get('id'),{
-                headers: {
-                    accept: "application/json",
-                    Authorization: "Bearer secret_vGqByTVAXyhKzQtcKQGRFRNLUv8Q3U3x",
-                }
-            })
-            
-            .then((data)=>{
-                setDetails(data.data)
-            })
+      // 👇️ scroll to top on page load
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 
-            .catch(error=>console.log(error));
-        },[])
+      axios
+        .get(
+          "https://app.ecwid.com/api/v3/82720670/categories/" +
+            queryParams.get("id"),
+          {
+            headers: {
+              accept: "application/json",
+              Authorization: "Bearer secret_vGqByTVAXyhKzQtcKQGRFRNLUv8Q3U3x",
+            },
+          }
+        )
+
+        .then((data) => {
+          setDetails(data.data);
+        })
+
+        .catch((error) => console.log(error));
+    },[])
         console.log(details)
   return (
     <div className='sericeCont'>
