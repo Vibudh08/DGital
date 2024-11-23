@@ -31,7 +31,7 @@ export default function ServicesDetail() {
     <div className="serviceDetails">
       <h1>Service Details</h1>
       <div className="serviceDetails-box">
-        {categories &&
+        {categories ?
           categories.map((items) => (
             <div className="content-box" key={items.id}>
               <Link to={`/serviceData?id=${items.id}`}>
@@ -41,7 +41,7 @@ export default function ServicesDetail() {
               </Link>
               <h3>{items.name}</h3>
             </div>
-          ))}
+          )): <h3>No data found</h3>}
       </div>
     </div>
   );
